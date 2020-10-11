@@ -10,6 +10,14 @@ pipeline {
 				}
 
 					}
+stage("Run unit tests") {
+    steps { 
+        sh """
+           pytest
+           
+           """
+    }
+                        }
 
 
 	       } 
